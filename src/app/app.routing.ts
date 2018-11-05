@@ -18,7 +18,7 @@ import { LetterComponent } from '../letter/letter.component';
   @NgModule({
     imports: [ RouterModule.forRoot([
         {
-            path: 'home',
+            path: '',
             component: AppComponent
         },
         {

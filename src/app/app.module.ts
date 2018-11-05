@@ -7,11 +7,13 @@ import AppComponent             from './app.component';
 import { AppRoutingModule }     from './app.routing';
 
 import { LetterComponent }      from '../letter/letter.component';
+import { OptionsComponent }     from '../options/options.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LetterComponent
+    LetterComponent,
+    OptionsComponent
   ],
   imports: [
     BrowserModule,
@@ -20,7 +22,8 @@ import { LetterComponent }      from '../letter/letter.component';
   ],
   bootstrap: [
     AppComponent,
-    LetterComponent
+    LetterComponent,
+    OptionsComponent
   ]
 })
 export default class AppModule { }
