@@ -1,2 +1,20 @@
-<app-options></app-options>>
+<header class="ms-welcome__header ms-bgColor-neutralLighter ms-u-fadeIn500">
+    <img width="90" height="90" src="../../assets/dotoffice_80x.png" alt="my-office-add-in" title="my-office-add-in" />
+    <h1 class="ms-fontSize-su ms-fontWeight-light ms-fontColor-neutralPrimary">{{welcomeMessage}}</h1>
+
+    <div class="ms-Grid" dir="ltr">
+        <div class="ms-Grid-row">
+            <div class="ms-Grid-col ms-sm6 ms-md4 ms-lg2">
+                <i class="ms-Icon ms-Icon--Page"></i>
+                <a routerLink="letter" class="ms-font-m ms-fontColor-neutralPrimary">Brief</a>
+            </div>
+            <div class="ms-Grid-col ms-sm6 ms-md8 ms-lg10">
+                <i class="ms-Icon ms-Icon--Unlock"></i>
+                 <a routerLink="" class="ms-font-m ms-fontColor-neutralPrimary">Home</a>      
+            </div>
+        </div>
+    </div>
+
+</header>
+
 <router-outlet></router-outlet>

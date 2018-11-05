@@ -9,7 +9,7 @@ const template = require('../app/app.component.html');
 })
 
 export default class AppComponent {
-    welcomeMessage = 'Welcome';
+    welcomeMessage = 'doOffice';
 
     createContentControl() {
         Word.run(function (context) {

@@ -5,14 +5,15 @@
     <ul class="ms-List ms-welcome__features ms-u-slideUpIn10">
         <li class="ms-ListItem">
             <i class="ms-Icon ms-Icon--Ribbon"></i>
-            <a href="" class="ms-font-m ms-fontColor-neutralPrimary">Brief</a>
+            <a routerLink="" class="ms-font-m ms-fontColor-neutralPrimary">Brief</a>
+            <uif-button uif-type="compound">
+                Click Me!
+            <uif-button-description>a button with a description</uif-button-description>
+            </uif-button>
         </li>
         <li class="ms-ListItem">
             <i class="ms-Icon ms-Icon--Unlock"></i>
-            <a class="ms-font-m ms-fontColor-neutralPrimary">Unlock features and functionality</a>
-        </li>
-        <li class="ms-ListItem">
-            <a class="ms-font-m ms-fontColor-neutralPrimary">Create and visualize like a pro</a>
+            <a class="ms-font-m ms-fontColor-neutralPrimary" (click)="loadTemplate()">Load file</a>
         </li>
     </ul>
 

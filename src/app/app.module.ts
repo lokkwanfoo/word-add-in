@@ -2,12 +2,13 @@ import { NgModule }               from '@angular/core';
 import { BrowserModule }          from '@angular/platform-browser';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { RouterModule }           from '@angular/router';
+import { HttpClientModule }       from '@angular/common/http';
 
 import AppComponent             from './app.component';
 import { AppRoutingModule }     from './app.routing';
 
-import { LetterComponent }      from '../letter/letter.component';
-import { OptionsComponent }     from '../options/options.component';
+import { LetterComponent }      from '../pages/letter/letter.component';
+import { OptionsComponent }     from '../pages/options/options.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,9 @@ import { OptionsComponent }     from '../options/options.component';
   imports: [
     BrowserModule,
     RouterModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
+    
   ],
   bootstrap: [
     AppComponent,
